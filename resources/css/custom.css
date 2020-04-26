@@ -1,0 +1,51 @@
+/*home page*/
+
+
+.slider_icons li{
+	font-size: 50px;
+	color: red;
+}
+
+/*the policy page*/
+#policy h4 {
+    font-size: 1.6rem;
+    color: #223547;
+    line-height: 26px;
+    margin-bottom: 7px;
+    font-family: 'Open Sans',sans-serif;
+}
+
+#disclaimer h1, #policy h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#disclaimer h2, #policy h2 {
+    font-size: 2rem;
+    color: #223547;
+    text-transform: uppercase;
+    text-align: center;
+}
+/*contact page design*/
+.mkdf-st-title {
+    font-size: 2.3rem;
+    line-height: 1.2;
+    color: #223547;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+.mkdf-st-text {
+    display: block;
+    font-size: 18px;
+    color: #223547;
+}
+.mkdf-st-text h4{
+    font-size: 1.3rem;
+    line-height: 1.2;
+    color: #223547;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    font-weight: 700;
+}
