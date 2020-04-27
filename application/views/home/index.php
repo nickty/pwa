@@ -168,17 +168,17 @@
             
           </div>
           <div class="input-field col s2">
-            <button class="btn">Sign Up</button>
+            <a class="waves-effect waves-light btn modal-trigger orange" href="#modal1">Sign Up</a>
           </div>
         </div>
         
-        </div>
-        
-      </form>
-      
-    </div>
-    
+      </div>
+
+    </form>
+
   </div>
+
+</div>
 </section>
 
 
@@ -388,3 +388,42 @@
   </section>  
 </section>
 
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <h4>Quick Register</h4>
+    <p>Register to get your order update anytime!</p>
+  </div>
+
+  <div class="row">
+    <div class="col s12">
+      <div class="row" id="regi">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">textsms</i>
+          <input type="text" id="autocomplete-input" class="autocomplete">
+          <label for="autocomplete-input">Name</label>
+        </div>
+        <div class="input-field col s12">
+          <i class="material-icons prefix">email</i>
+          <input type="email" id="autocomplete-input" class="autocomplete">
+          <label for="autocomplete-input">Name</label>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">lock</i>
+          <input type="password" id="autocomplete-input" class="autocomplete">
+          <label for="autocomplete-input">Type Password</label>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">lock</i>
+          <input type="password" id="autocomplete-input" class="autocomplete">
+          <label for="autocomplete-input">Retype Password</label>
+        </div>
+      </div>
+      <button class="btn orange right" id="regi" name="regi">Register</button>
+    </div>
+  </div>
+
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+  </div>
+</div>
