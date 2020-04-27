@@ -1,4 +1,8 @@
-<footer class="page-footer">
+<footer class="page-footer" style="
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  ">
   <div class="container">
     <div class="row">
       <div class="col l3 s12">
@@ -15,8 +19,8 @@
         <ul>
           <li><a class="grey-text text-lighten-3" href="#!">Uttom Betarpara, Sadar, Rangpur, BD</a></li>
           <li><a class="grey-text text-lighten-3" href="#!">Floor 2</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!"><i class="fa fa-email"></i> rangpurdev@pwaoptimizer.xyz</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!"><i class="fa fa-skype"></i> nickty18</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!"><i class="fa fa-envelope"></i> rangpurdev@pwaoptimizer.xyz</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!"><i class="fa fa-phone"></i> nickty18</a></li>
         </ul>
       </div>
       <div class="col l3 s12">
@@ -26,9 +30,9 @@
       <div class="col l3 s12">
         <h5 class="white-text">More Links</h5>
         <ul>
-          <li><a class="grey-text text-lighten-3" href="#!">Privacy</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Disclaimer</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">FAQ</a></li>
+          <li><a class="grey-text text-lighten-3" href="<?= base_url('/home/privacy'); ?>">Privacy</a></li>
+          <li><a class="grey-text text-lighten-3" href="<?= base_url('/home/disclaimer'); ?>">Disclaimer</a></li>
+          <li><a class="grey-text text-lighten-3" href="<?= base_url('/home/faq'); ?>">FAQ</a></li>
           <li><a class="grey-text text-lighten-3" href="#!">SiteMap</a></li>
         </ul>
       </div>

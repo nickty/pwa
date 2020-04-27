@@ -18,13 +18,13 @@
   <section class="navbar-fixed">
     <nav class="#eceff1 blue-grey lighten-1">
       <div class="nav-wrapper container">
-        <a href="#!" class="brand-logo"><i class="large material-icons">crop_rotate</i> PWA<b>Optimizer</b></a>
+        <a href="<?= base_url('/') ?>" class="brand-logo"><i class="fa fa-rocket orange-text" aria-hidden="true"></i> PWA<b>Optimizer</b></a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
           <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Core Services<i class="material-icons right">arrow_drop_down</i></a></li>
-          <li><a href="badges.html">Work</a></li>
+          <li><a href="<?= base_url('home/work/') ?>">Work</a></li>
           <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Other Services<i class="material-icons right">arrow_drop_down</i></a></li>
-          <button class="btn"><a href="mobile.html">Contact</a></button>
+          <button class="btn"><a href="<?= base_url('home/contact'); ?>">Contact</a></button>
         </ul>
 
       </div>
@@ -32,26 +32,26 @@
 
     <!-- dropdown for other services -->
     <ul id="dropdown2" class="dropdown-content">
-      <li><a href="#!">PWA From Scratch</a></li>
+      <li><a href="<?= base_url('home/pwafromstratch/'); ?>">PWA From Scratch</a></li>
       <li class="divider"></li>
-      <li><a href="#!">Migration To PWA</a></li>
+      <li><a href="<?= base_url('home/migration_to_pwa/') ?>">Migration To PWA</a></li>
       <li class="divider"></li>
-      <li><a href="#!">PWA Optimization</a></li>
+      <li><a href="<?= base_url('home/pwa_optimize/') ?>">PWA Optimization</a></li>
       <li class="divider"></li>
-      <li><a href="#!">PWA SEO</a></li>
+      <li><a href="<?= base_url('home/pwa_seo/') ?>">PWA SEO</a></li>
       <li class="divider"></li>
-      <li><a href="#!">PWA Maintenance</a></li>
+      <li><a href="<?= base_url('home/pwa_maintenance/') ?>">PWA Maintenance</a></li>
     </ul>
 
     <!-- dropdown for other services -->
     <ul id="dropdown1" class="dropdown-content">
-      <li><a href="#!">Website Design</a></li>
+      <li><a href="<?= base_url('home/web_design/') ?>">Website Design</a></li>
       <li class="divider"></li>
-      <li><a href="#!">Website Development</a></li>
+      <li><a href="<?= base_url('home/web_development/') ?>">Website Development</a></li>
       <li class="divider"></li>
-      <li class="divider">Software Development</li>
+      <li><a href="<?= base_url('home/soft_development/') ?>">Software Development</a></li>
       <li class="divider"></li>
-      <li><a href="#!">Graphic Design (Only4web)</a></li>
+      <li><a href="<?= base_url('home/graphic_design') ?>">Graphic Design (Only4web)</a></li>
     </ul>
 
     <ul class="sidenav" id="mobile-demo">

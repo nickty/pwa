@@ -1,68 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <!--Import Google Icon Font-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="resources/css/materialize.min.css"  media="screen,projection"/>
-  <link type="text/css" rel="stylesheet" href="resources/fonts/css/all.css"  media="screen,projection"/>
-  <link type="text/css" rel="stylesheet" href="resources/css/custom.css"  media="screen,projection"/>
-
-  <!--Let browser know website is optimized for mobile-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-</head>
-
-<body class="#eceff1 blue-grey lighten-5">
-  <section class="navbar-fixed">
-    <nav class="#eceff1 blue-grey lighten-1">
-      <div class="nav-wrapper container">
-        <a href="#!" class="brand-logo"><i class="large material-icons">crop_rotate</i> PWA<b>Optimizer</b></a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
-          <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Core Services<i class="material-icons right">arrow_drop_down</i></a></li>
-          <li><a href="badges.html">Work</a></li>
-          <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Other Services<i class="material-icons right">arrow_drop_down</i></a></li>
-          <button class="btn"><a href="mobile.html">Contact</a></button>
-        </ul>
-
-      </div>
-    </nav>
-
-    <!-- dropdown for other services -->
-    <ul id="dropdown2" class="dropdown-content">
-      <li><a href="#!">PWA From Scratch</a></li>
-      <li class="divider"></li>
-      <li><a href="#!">Migration To PWA</a></li>
-      <li class="divider"></li>
-      <li><a href="#!">PWA Optimization</a></li>
-      <li class="divider"></li>
-      <li><a href="#!">PWA SEO</a></li>
-      <li class="divider"></li>
-      <li><a href="#!">PWA Maintenance</a></li>
-    </ul>
-
-    <!-- dropdown for other services -->
-    <ul id="dropdown1" class="dropdown-content">
-      <li><a href="#!">Website Design</a></li>
-      <li class="divider"></li>
-      <li><a href="#!">Website Development</a></li>
-      <li class="divider"></li>
-      <li class="divider">Software Development</li>
-      <li class="divider"></li>
-      <li><a href="#!">Graphic Design (Only4web)</a></li>
-    </ul>
-
-    <ul class="sidenav" id="mobile-demo">
-      <li><a href="sass.html"></a></li>
-      <li><a href="sass.html">Website Development</a></li>
-      <li><a href="badges.html">Software Development</a></li>
-      <li><a href="collapsible.html">SEO</a></li>
-      <li><a href="collapsible.html">Graphic Design (Only4web)</a></li>
-      <button class="btn"><a href="mobile.html">Contact</a></button>
-    </ul>
-  </section>
-  <!-- Slider section -->
-
   <section class="container">
     <center>
       <h2 style="color: #223546;
@@ -70,7 +5,7 @@
       margin-bottom: 35px;
       font-weight: 700;
       line-height: 1.3;
-      letter-spacing: -1px;">We Build Next Generation Progressive Web Apps with Native alike Experience</h2>
+      letter-spacing: -1px;">We Build Next Generation Progressive Web Apps with Native alike <span class="orange-text">Experience</span></h2>
       <p style="max-width: 845px;
       width: 100%;
       margin: 0 auto 60px;
@@ -167,7 +102,7 @@
           <div class="digital-block d-flex">
 
             <center>
-              <strong class="digital-value" style="font-size: 10rem; padding: 0; margin:0;">90</strong>
+              <strong class="orange-text" style="font-size: 10rem; padding: 0; margin:0;">90</strong>
               <h4>days free Maintenance</h4>
               <p>
                 We are here to support you post-deployment, with Free Maintenance service for 90 days.
@@ -453,55 +388,3 @@
   </section>  
 </section>
 
-<footer class="page-footer">
-  <div class="container">
-    <div class="row">
-      <div class="col l3 s12">
-        <h5 class="white-text">Main Services</h5>
-        <ul>
-          <li><a class="grey-text text-lighten-3" href="#!">Website Maintenance</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Mobile App Maintenance</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Long Run SEO</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Instant Support</a></li>
-        </ul>
-      </div>
-      <div class="col l3 s12">
-        <h5 class="white-text">Contact Us</h5>
-        <ul>
-          <li><a class="grey-text text-lighten-3" href="#!">Uttom Betarpara, Sadar, Rangpur, BD</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Floor 2</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!"><i class="fa fa-email"></i> rangpurdev@pwaoptimizer.xyz</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!"><i class="fa fa-skype"></i> nickty18</a></li>
-        </ul>
-      </div>
-      <div class="col l3 s12">
-        <h5 class="white-text">Links</h5>
-        <div class="white-text"> <a class="" data-hover-color="#ff8a73" style="font-size: 19px; margin: 0px 14px 0px 0px; color: rgb(36, 36, 43);" href="https://www.facebook.com/commingsoon/" target="_blank"> <span class="white-text mkdf-social-icon-widget fab fa-facebook-f"></span> </a> <a class="mkdf-social-icon-widget-holder mkdf-icon-has-hover" data-hover-color="#ff8a73" style="font-size: 19px; margin: 0px 14px 0px 0px; color: rgb(36, 36, 43);" href="https://www.linkedin.com/company/will be" target="_blank"> <span class="white-text fab fa-linkedin"></span> </a> <a class="mkdf-social-icon-widget-holder mkdf-icon-has-hover" data-hover-color="#ff8a73" style="font-size: 19px; margin: 0px 14px 0px 0px; color: rgb(36, 36, 43);" href="https://www.instagram.com/will/" target="_self"> <span class="white-text mkdf-social-icon-widget fab fa-instagram"></span> </a> <a class="mkdf-social-icon-widget-holder mkdf-icon-has-hover" data-hover-color="#ff8a73" style="font-size: 19px; margin: 0px 14px 0px 0px; color: rgb(36, 36, 43);" href="https://twitter.com/will" target="_self"> <span class="white-text mkdf-social-icon-widget fab fa-twitter"></span> </a></div>
-      </div>
-      <div class="col l3 s12">
-        <h5 class="white-text">More Links</h5>
-        <ul>
-          <li><a class="grey-text text-lighten-3" href="#!">Privacy</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Disclaimer</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">FAQ</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">SiteMap</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="footer-copyright">
-    <div class="container">
-      © 2014 Copyright Text
-      <a class="grey-text text-lighten-4 right" href="#!">Mizanur Rahman</a>
-    </div>
-  </div>
-</footer>
-
-<!--JavaScript at end of body for optimized loading-->
-<script type="text/javascript" src="resources/js/jquery.js"></script>
-<script type="text/javascript" src="resources/js/materialize.min.js"></script>
-<script type="text/javascript" src="resources/js/custom.js"></script>
-<script type="text/javascript" src="resources/fonts/js/all.js"></script>
-
-</body>
-</html>

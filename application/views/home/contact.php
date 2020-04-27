@@ -1,7 +1,8 @@
 <section class="container">
 	<div style="margin: 25px;">
 		<center>
-			<img class="activator" src="images/office.jpg">
+			<img class="activator" src="<?= base_url('images/mizan.jpg'); ?>" width=250>
+			<h4><a href="https://www.linkedin.com/in/mizanur-rahman-a808082a/?lipi=urn%3Ali%3Apage%3Ad_flagship3_notifications%3BPy%2BQksbVQEGa1bLReLB9rg%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_notifications-nav.settings_view_profile" target="_blank">Mizan</a></h4>
 		<h5>Waiting to connect</h5>
 		</center>
 		
