@@ -26,4 +26,19 @@ $(document).ready(function(){
   $('.modal').modal();
 });
 
+// $('#registerbtn').click(function(e){
+//   e.preventDefault();
+//   var name = $('#name').val();
+//   var email = $('#email').val(); 
+//   var password = $('#password').val(); 
+//   var rpassword = $('#rpassword').val(); 
 
+//  if (password === rpassword) {
+//   alert('working')
+//  } else 
+//  {
+//   alert('not working')
+//  }
+
+
+// }); 

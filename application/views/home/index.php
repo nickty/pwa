@@ -168,7 +168,8 @@
             
           </div>
           <div class="input-field col s2">
-            <a class="waves-effect waves-light btn modal-trigger orange" href="#modal1">Sign Up</a>
+
+            <a class="waves-effect waves-light btn modal-trigger orange" href="#modal1">Register</a>
           </div>
         </div>
         
@@ -396,30 +397,32 @@
   </div>
 
   <div class="row">
+    <form method="post" action="">
     <div class="col s12">
       <div class="row" id="regi">
         <div class="input-field col s12">
           <i class="material-icons prefix">textsms</i>
-          <input type="text" id="autocomplete-input" class="autocomplete">
-          <label for="autocomplete-input">Name</label>
+          <input type="text" id="name" name="name" class="autocomplete" required>
+          <label for="name">Name</label>
         </div>
         <div class="input-field col s12">
           <i class="material-icons prefix">email</i>
-          <input type="email" id="autocomplete-input" class="autocomplete">
+          <input type="email" id="autocomplete-input" class="autocomplete" required>
           <label for="autocomplete-input">Name</label>
         </div>
         <div class="input-field col s6">
           <i class="material-icons prefix">lock</i>
-          <input type="password" id="autocomplete-input" class="autocomplete">
-          <label for="autocomplete-input">Type Password</label>
+          <input type="password" id="password" name="password" class="autocomplete" required>
+          <label for="password">Type Password</label>
         </div>
         <div class="input-field col s6">
           <i class="material-icons prefix">lock</i>
-          <input type="password" id="autocomplete-input" class="autocomplete">
-          <label for="autocomplete-input">Retype Password</label>
+          <input type="password" id="rpassword" id="rpassword" class="autocomplete" required>
+          <label for="rpassword">Retype Password</label>
         </div>
       </div>
-      <button type="submit" class="btn orange right" id="regi" name="regi">Register</button>
+      <button class="btn orange right" type="submit" id="registerbtn" name="registerbtn">Register</button>
+      <form>
     </div>
   </div>
 

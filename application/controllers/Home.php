@@ -113,5 +113,7 @@ class Home extends CI_Controller {
 		$this->load->view('home/graphic_design.php');
 		$this->load->view('includes/footer.php');
 	}
+
+	
 	
 }
