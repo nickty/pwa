@@ -26,15 +26,4 @@ $(document).ready(function(){
   $('.modal').modal();
 });
 
-// if ('#regi' != '') {
-//   $('#regi').click(function{
-//   alert('button is working'); 
-// });
-// }
- 
 
-// $(document).ready(function(){
-//   $('#regi').click(function{
-//     alert('button is working'); 
-//   });
-// });

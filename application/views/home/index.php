@@ -164,7 +164,7 @@
             <label for="lock_open">Password</label>
           </div>
           <div class="input-field col s2">
-            <button class="btn">get in</button>
+            <button class="btn" id="getin">get in</button>
             
           </div>
           <div class="input-field col s2">
@@ -419,7 +419,7 @@
           <label for="autocomplete-input">Retype Password</label>
         </div>
       </div>
-      <button class="btn orange right" id="regi" name="regi">Register</button>
+      <button type="submit" class="btn orange right" id="regi" name="regi">Register</button>
     </div>
   </div>
 
