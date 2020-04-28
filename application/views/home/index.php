@@ -151,20 +151,21 @@
         <h5>Access your protal to check our progress anytime</h5>
       </div>
       <div class="col s9">
-        <form class="col s12">
+       <form action="<?= base_url().'home/login'; ?>" id="client_login"> 
+        <div class="col s12">
          <div class="row">
           <div class="input-field col s4">
-            <i class="material-icons prefix">account_circle</i>
-            <input id="icon_prefix" type="text" class="validate">
-            <label for="icon_prefix">First Name</label>
+            <i class="material-icons prefix">email</i>
+            <input id="emailid" name="emailid" type="email" class="validate">
+            <label for="emailid">email</label>
           </div>
           <div class="input-field col s4">
             <i class="material-icons prefix">lock_open</i>
-            <input id="password" type="password" class="validate">
+            <input id="pass" name="pass" type="password" class="validate">
             <label for="lock_open">Password</label>
           </div>
           <div class="input-field col s2">
-            <button class="btn" id="getin">get in</button>
+            <button type="submit" class="btn">get in</button>
             
           </div>
           <div class="input-field col s2">
@@ -397,7 +398,8 @@
   </div>
 
   <div class="row">
-    <form method="post" action="">
+    
+    <form action="<?= base_url().'home/register'; ?>" id="add_client">
     <div class="col s12">
       <div class="row" id="regi">
         <div class="input-field col s12">
@@ -407,22 +409,22 @@
         </div>
         <div class="input-field col s12">
           <i class="material-icons prefix">email</i>
-          <input type="email" id="autocomplete-input" class="autocomplete" required>
-          <label for="autocomplete-input">Name</label>
+          <input type="email" id="emailid" name="emailid" class="autocomplete" required>
+          <label for="email">Email</label>
         </div>
         <div class="input-field col s6">
           <i class="material-icons prefix">lock</i>
-          <input type="password" id="password" name="password" class="autocomplete" required>
-          <label for="password">Type Password</label>
+          <input type="password" id="pass" name="pass" class="autocomplete" required>
+          <label for="pass">Type Password</label>
         </div>
         <div class="input-field col s6">
           <i class="material-icons prefix">lock</i>
-          <input type="password" id="rpassword" id="rpassword" class="autocomplete" required>
-          <label for="rpassword">Retype Password</label>
+          <input type="password" id="rpass" name="rpass" class="autocomplete" required>
+          <label for="rpass">Retype Password</label>
         </div>
       </div>
-      <button class="btn orange right" type="submit" id="registerbtn" name="registerbtn">Register</button>
-      <form>
+      <button type="submit" class="btn orange right">Register</button>
+      </form>
     </div>
   </div>
 

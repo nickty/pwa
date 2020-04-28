@@ -49,8 +49,8 @@
 <!--JavaScript at end of body for optimized loading-->
 <script type="text/javascript" src="<?= base_url('resources/js/jquery.js'); ?>"></script>
 <script type="text/javascript" src="<?= base_url('resources/js/materialize.min.js'); ?>"></script>
-<script type="text/javascript" src="<?= base_url('resources/js/custom.js'); ?>"></script>
 <script type="text/javascript" src="<?= base_url('resources/fonts/js/all.js'); ?>"></script>
+<script type="text/javascript" src="<?= base_url('resources/js/custom.js'); ?>"></script>
 
 </body>
 </html>

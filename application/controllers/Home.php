@@ -5,7 +5,9 @@ class Home extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();  
+		$this->load->model('Admin/AdminModel', 'am');
 
+		//$this->load->library('session');
 		
 	}
 
@@ -114,6 +116,71 @@ class Home extends CI_Controller {
 		$this->load->view('includes/footer.php');
 	}
 
-	
+	public function register()
+	{
+
+		// $cmails = $this->db->select($email)->from('clients')->get();
+		// $allemails = $cmails->result_array();
+
+		$email = $_POST['email']; 
+
+		$chekmail = $this->am->CheckMail($email);
+
+		if ($chekmail) {
+			echo 3; 
+		} else 
+		{
+			if ($_POST['password'] != $_POST['rpassword']) {
+				echo 2; 
+			} else 
+			{
+				$res = $this->db->insert('clients', $_POST); 
+
+				if ($res) {
+					echo 1; 
+				} else 
+				{
+					return false; 
+
+				}
+			}
+		}
+
+
+		
+
+		
+	}
+
+	public function dashboard()
+	{
+		$this->load->view('includes/header.php');
+		$this->load->view('client/cdashboard.php');
+		$this->load->view('includes/footer.php');
+	}
+
+	public function login()
+	{
+		$email = $_POST['email']; 
+		$password = $_POST['password'];
+
+		$result = $this->am->Login($email, $password); 
+
+		if ($result) {
+
+			$client_session = [
+				'client_email' => $email, 
+				'client_password' => $password
+			]; 
+			$this->session->set_userdata($client_session); 
+			echo 0;	
+			return redirect('home/dashboard'); 
+
+
+		} else 
+		{
+			echo 1;  
+		}
+	}
 	
 }
