@@ -5,6 +5,7 @@ class Home extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();  
+
 		$this->load->model('Admin/AdminModel', 'am');
 
 		//$this->load->library('session');
@@ -121,6 +122,7 @@ class Home extends CI_Controller {
 
 		// $cmails = $this->db->select($email)->from('clients')->get();
 		// $allemails = $cmails->result_array();
+		//return print_r($_POST['password']); 
 
 		$email = $_POST['email']; 
 
@@ -154,9 +156,23 @@ class Home extends CI_Controller {
 
 	public function dashboard()
 	{
-		$this->load->view('includes/header.php');
-		$this->load->view('client/cdashboard.php');
-		$this->load->view('includes/footer.php');
+		if ($this->session->userdata('client_email') == "" && $this->session->userdata('client_password') == "") {
+			$this->load->view('includes/header.php');
+			$this->load->view('home/index.php');
+			$this->load->view('includes/footer.php');
+		} else 
+		{
+			$client_email = $this->session->userdata('client_email'); 
+
+			$data['client'] = $this->db->get_where('clients', ['email' => $client_email]);
+
+			$this->load->view('includes/header.php');
+			$this->load->view('client/cdashboard.php', $data);
+			$this->load->view('includes/footer.php');
+
+
+		}
+		
 	}
 
 	public function login()
@@ -164,7 +180,10 @@ class Home extends CI_Controller {
 		$email = $_POST['email']; 
 		$password = $_POST['password'];
 
-		$result = $this->am->Login($email, $password); 
+		//return print_r($_POST); 
+
+		$result = $this->am->Login(); 
+
 
 		if ($result) {
 
@@ -173,9 +192,9 @@ class Home extends CI_Controller {
 				'client_password' => $password
 			]; 
 			$this->session->set_userdata($client_session); 
-			echo 0;	
-			return redirect('home/dashboard'); 
 
+			//return redirect('home/dashboard'); 
+			echo 0;
 
 		} else 
 		{

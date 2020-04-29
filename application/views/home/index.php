@@ -156,16 +156,16 @@
          <div class="row">
           <div class="input-field col s4">
             <i class="material-icons prefix">email</i>
-            <input id="emailid" name="emailid" type="email" class="validate">
+            <input type="email" id="emailid" name="emailid" class="validate">
             <label for="emailid">email</label>
           </div>
           <div class="input-field col s4">
             <i class="material-icons prefix">lock_open</i>
-            <input id="pass" name="pass" type="password" class="validate">
-            <label for="lock_open">Password</label>
+            <input type="password" id="passvl" name="passvl" class="validate">
+            <label for="passvl">Password</label>
           </div>
           <div class="input-field col s2">
-            <button type="submit" class="btn">get in</button>
+            <button type="submit" class="btn">Login</button>
             
           </div>
           <div class="input-field col s2">
@@ -409,17 +409,17 @@
         </div>
         <div class="input-field col s12">
           <i class="material-icons prefix">email</i>
-          <input type="email" id="emailid" name="emailid" class="autocomplete" required>
+          <input type="email" id="email_id" name="email_id" class="autocomplete" required>
           <label for="email">Email</label>
         </div>
         <div class="input-field col s6">
           <i class="material-icons prefix">lock</i>
-          <input type="password" id="pass" name="pass" class="autocomplete" required>
+          <input type="password" id="passv" name="passv" required>
           <label for="pass">Type Password</label>
         </div>
         <div class="input-field col s6">
           <i class="material-icons prefix">lock</i>
-          <input type="password" id="rpass" name="rpass" class="autocomplete" required>
+          <input type="password" id="rpass" name="rpass" required>
           <label for="rpass">Retype Password</label>
         </div>
       </div>

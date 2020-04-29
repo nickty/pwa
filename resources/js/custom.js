@@ -29,11 +29,11 @@ $(document).ready(function(){
 $('#add_client').submit(function(){
 
   var  name = $('#name').val();
-  var  email = $('#emailid').val(); 
-  var  password = $('#pass').val(); 
+  var  email = $('#email_id').val(); 
+  var  password = $('#passv').val(); 
   var  rpassword = $('#rpass').val();
 
-   url=$(this).attr('action');
+  url=$(this).attr('action');
 
   
     // $.ajax({
@@ -56,6 +56,7 @@ $('#add_client').submit(function(){
   
 
   $.post(url,{name:name, email:email, password:password, rpassword:rpassword}, function(data) {
+ 
     if (data.match('1')) {
       alert('You are registered now!')
       setTimeout(function(){
@@ -79,18 +80,19 @@ $('#add_client').submit(function(){
 $('#client_login').submit(function(){
   
   var email = $('#emailid').val(); 
-  var password = $('#pass').val(); 
+  var password10 = $('#passvl').val(); 
   url=$(this).attr('action');
 
-  return alert(email + password);
-  return false;  
 
-  $.post(url, {email:email, password:password}, function(data){
+  $.post(url, {email:email, password:password10}, function(data){
+   
     if (data.match('1')) {
       alert('Wrong access information!'); 
     }
     else if (data.match('0')) {
-      alert('lgged in')
+      setTimeout(function(){
+        window.location.href="http://localhost/pwaoptimizer/home/dashboard"; 
+      }, 2000); 
     } else 
     {
       alert('Unknow error!')

@@ -1,3 +1,6 @@
+<?php echo $client; ?>
+
+
 <section>
 	<div class="container">
 		<div class="row">
