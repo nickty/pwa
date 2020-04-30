@@ -7,6 +7,7 @@ class Home extends CI_Controller {
 		parent::__construct();  
 
 		$this->load->model('Admin/AdminModel', 'am');
+		$this->load->model('Common_model', 'cm');
 
 		//$this->load->library('session');
 		
@@ -157,14 +158,12 @@ class Home extends CI_Controller {
 	public function dashboard()
 	{
 		if ($this->session->userdata('client_email') == "" && $this->session->userdata('client_password') == "") {
-			$this->load->view('includes/header.php');
-			$this->load->view('home/index.php');
-			$this->load->view('includes/footer.php');
+			return redirect('home/index');
 		} else 
 		{
 			$client_email = $this->session->userdata('client_email'); 
 
-			$data['client'] = $this->db->get_where('clients', ['email' => $client_email]);
+			$data['client'] = $this->cm->select_data('clients', ['email' => $client_email]);
 
 			$this->load->view('includes/header.php');
 			$this->load->view('client/cdashboard.php', $data);
@@ -182,7 +181,7 @@ class Home extends CI_Controller {
 
 		//return print_r($_POST); 
 
-		$result = $this->am->Login(); 
+		$result = $this->am->Login($email, $password); 
 
 
 		if ($result) {
@@ -192,14 +191,21 @@ class Home extends CI_Controller {
 				'client_password' => $password
 			]; 
 			$this->session->set_userdata($client_session); 
-
-			//return redirect('home/dashboard'); 
+			return redirect('home/dashboard'); 
 			echo 0;
 
 		} else 
 		{
 			echo 1;  
 		}
+	}
+
+	public function Logout()
+	{
+
+		$this->session->unset_userdata('client_email'); 
+		$this->session->unset_userdata('client_password'); 
+		return redirect('home/index'); 
 	}
 	
 }

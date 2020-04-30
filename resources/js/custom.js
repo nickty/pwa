@@ -90,9 +90,10 @@ $('#client_login').submit(function(){
       alert('Wrong access information!'); 
     }
     else if (data.match('0')) {
-      setTimeout(function(){
-        window.location.href="http://localhost/pwaoptimizer/home/dashboard"; 
-      }, 2000); 
+      // setTimeout(function(){
+      //   window.location.href="http://localhost/pwaoptimizer/home/dashboard"; 
+      // }, 2000); 
+      alert('Logging')
     } else 
     {
       alert('Unknow error!')

@@ -21,9 +21,9 @@ class AdminModel extends CI_Model
 		}
 	}
 
-	public function Login()
+	public function Login($email, $password)
 	{
-		$check_admin = $this->db->get_where('clients', ['email' => $_POST['email'], 'password' => $_POST['password']]); 
+		$check_admin = $this->db->get_where('clients', ['email' => $email, 'password' => $password]); 
 
 		if ($check_admin->num_rows() > 0) {
 			return true;

@@ -25,6 +25,7 @@
           <li><a href="<?= base_url('home/work/') ?>">Work</a></li>
           <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Other Services<i class="material-icons right">arrow_drop_down</i></a></li>
           <button class="btn"><a href="<?= base_url('home/contact'); ?>">Contact</a></button>
+          <li><a href="<?= base_url('home/logout') ?>">Logout</a></li>
         </ul>
 
       </div>
