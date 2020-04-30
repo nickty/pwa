@@ -49,3 +49,7 @@
     line-height: 1.2;
     font-weight: 700;
 }
+
+.card-panel {
+    height: 200px; 
+}

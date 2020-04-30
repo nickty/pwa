@@ -5,11 +5,11 @@
       margin-bottom: 35px;
       font-weight: 700;
       line-height: 1.3;
-      letter-spacing: -1px;">We Build Next Generation Progressive Web Apps with Native alike <span class="orange-text">Experience</span></h2>
+      letter-spacing: -1px;">Collection of New Technonogies Build Progressive Web Apps That has Native alike <span class="orange-text">Experience</span></h2>
       <p style="max-width: 845px;
       width: 100%;
       margin: 0 auto 60px;
-      font-size: 1.2rem;">AppsChopper builds fast, reliable and engaging progressive web apps (PWAs). Our team designs and develops PWA with great experience that gets placed on users’ home screens.</p>
+      font-size: 1.2rem;">PwaOptimizer builds fast, reliable and engaging progressive web apps (PWAs). We design and develop Progressive Apps with awesome experience that gets placed on user's home screens.</p>
       <div class="slider_icons" style="font-size: 50px;">
 
         <i class="fas fa-mobile-alt"></i>
@@ -17,77 +17,77 @@
         <i class="fas fa-desktop"></i>
         
       </div>
-      <button class="btn">Let's Build Your One :)</button>
+      <a href="<?= base_url('home/contact'); ?>" class="btn">Let's Build Your One :)</a>
     </center>
   </section>
   <section>
     <div class="container">
       <center>
         <h3>
-          The Progressive Web App Development | PWA
+          Major Benefits of Using Progressive Web App | PWA
         </h3>
         <p>
-          Our team of Progressive Web App Builders have helped over 15 SMBs and Establishments increase their user engagement by over 65X and grow their revenues by over 300% with our Progressive Web App development services.
+          It's important to have PWA version for every single website and we made it easy for them. Because it provide major functionality of any kind website has. And it will work without <span class="orange-text">INTERNET</span>.   
         </p>
       </center>
       <div class="row">
         <div class="col l3 m3 s12">
           <div class="card">
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="images/office.jpg">
+              <img class="activator" src="images/offline_access.jpg" height="200">
             </div>
             <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-              <p><a href="#">This is a link</a></p>
+              <span class="card-title activator grey-text text-darken-4">Access Offline<i class="material-icons right">more_vert</i></span>
+              <p><a href="#">More</a></p>
             </div>
             <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              <span class="card-title grey-text text-darken-4">Access Offline<i class="material-icons right">close</i></span>
+              <p>Your customer will access all content without internet. Since we will use localStorage of their phone, the browsing exprience will be faster then normal browsing</p>
             </div>
           </div>
         </div>
         <div class="col l3 m3 s12">
           <div class="card">
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="images/office.jpg">
+              <img class="activator" src="images/offline_purchase.jpg" height="200">
             </div>
             <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-              <p><a href="#">This is a link</a></p>
+              <span class="card-title activator grey-text text-darken-4">Offline Purchase<i class="material-icons right">more_vert</i></span>
+              <p><a href="#">More</a></p>
             </div>
             <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              <span class="card-title grey-text text-darken-4">Offline Purchase<i class="material-icons right">close</i></span>
+              <p>When customers want to make purchase you don't want to miss it anyway. They will be able to make purchase offile and the app will keep purchase information and make adjustments whenever it get the internet</p>
             </div>
           </div>
         </div>
         <div class="col l3 m3 s12">
           <div class="card">
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="images/office.jpg">
+              <img class="activator" src="images/notification.jpg" height="200">
             </div>
             <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-              <p><a href="#">This is a link</a></p>
+              <span class="card-title activator grey-text text-darken-4">Notifications<i class="material-icons right">more_vert</i></span>
+              <p><a href="#">More</a></p>
             </div>
             <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              <span class="card-title grey-text text-darken-4">Offline Notifications<i class="material-icons right">close</i></span>
+              <p>It's great because customer/visitor get notification just like live website.</p>
             </div>
           </div>
         </div>
         <div class="col l3 m3 s12">
           <div class="card">
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="images/office.jpg">
+              <img class="activator" src="images/fastest_b.jpg" height="200">
             </div>
             <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-              <p><a href="#">This is a link</a></p>
+              <span class="card-title activator grey-text text-darken-4">Fastest Loading<i class="material-icons right">more_vert</i></span>
+              <p><a href="#">More</a></p>
             </div>
             <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              <span class="card-title grey-text text-darken-4">Fastest Loading<i class="material-icons right">close</i></span>
+              <p>They will have databases and other content inside their phone memory and this is how they have fastest browsing experience</p>
             </div>
           </div>
         </div>
@@ -112,11 +112,12 @@
         </div>
         <div class="white-text col l6 m6 s12" style="padding: 30px;">
           <div class="row">
-            <form class="col s12">
+            <div class="col s12">
+              <?= form_open('home/email'); ?>
               <div class="row">
                 <div class="input-field col s12">
-                  <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-                  <label for="first_name">First Name</label>
+                  <input placeholder="Name" id="first_name" name="first_name" type="text" class="validate" required>
+                  <label for="first_name">Name</label>
                 </div>
 
               </div>
@@ -124,20 +125,20 @@
 
               <div class="row">
                 <div class="input-field col s12">
-                  <input id="email" type="email" class="validate">
+                  <input id="email" type="email" name="email" class="validate" required>
                   <label for="email">Email</label>
                 </div>
               </div>
 
-
               <div class="row">
                 <div class="input-field col s12">
-                  <textarea id="textarea1" class="materialize-textarea"></textarea>
+                  <textarea id="textarea1" name="textarea1" class="materialize-textarea" required></textarea>
                   <label for="textarea1">Textarea</label>
                 </div>
               </div>
-              <button class="btn">Send</button>
-            </form>
+              <button type="submit" class="btn">Send</button>
+              <?= form_close(); ?>
+            </div>
           </div>
         </div>
       </div>
@@ -145,43 +146,7 @@
     </section>
   </div>
 
-  <section class="container">
-    <div class="row" style="border: 1px solid grey; padding: 30px 0">
-      <div class="col s3">
-        <h5>Access your protal to check our progress anytime</h5>
-      </div>
-      <div class="col s9">
-       <form action="<?= base_url().'home/login'; ?>" id="client_login"> 
-        <div class="col s12">
-         <div class="row">
-          <div class="input-field col s4">
-            <i class="material-icons prefix">email</i>
-            <input type="email" id="emailid" name="emailid" class="validate">
-            <label for="emailid">email</label>
-          </div>
-          <div class="input-field col s4">
-            <i class="material-icons prefix">lock_open</i>
-            <input type="password" id="passvl" name="passvl" class="validate">
-            <label for="passvl">Password</label>
-          </div>
-          <div class="input-field col s2">
-            <button type="submit" class="btn">Login</button>
-            
-          </div>
-          <div class="input-field col s2">
-
-            <a class="waves-effect waves-light btn modal-trigger orange" href="#modal1">Register</a>
-          </div>
-        </div>
-        
-      </div>
-
-    </form>
-
-  </div>
-
-</div>
-</section>
+  
 
 
 <section id="steps" style="margin-top: 40px;">
@@ -190,9 +155,9 @@
       <div class="ser_in" style="padding: 15px;">
         <div class="mode-content-blog col m12 s12 l4" style="font-size: 1.5rem;
         line-height: 1.2;">
-        <h3>Ideal Process of PWA Development</h3>
+        <h3>Standard Process of PWA Development</h3>
         <p>
-          We take each work as unique and custom, keeping the process very personalized for the product. However, in most scenarios, our PWA development process includes:
+          We need to understand all your content before we develop your PWA. It's important to make a good layout of all your contents and then decide which are going to be part of PWA. Take a look on steps:
         </p>
       </div>
       <div class="col l8 m12 s12">
@@ -216,12 +181,14 @@
 
                 <span>
                   <h5>Step - 2</h5>
-                  <p>Freezing scope and development technologies</p>
+                  <p>Creating layout and define development technologies</p>
                 </span>
               </div>
 
             </div>
           </div>
+
+          
 
           <div class="col l3 m3 s6">
 
@@ -229,7 +196,7 @@
 
               <span>
                 <h5>Step - 3</h5>
-                <p>Wireframing with PWA data flow architecture design</p>
+                <p>Designing & Develop using modern techonologies</p>
               </span>
             </div>
 
@@ -242,7 +209,7 @@
 
               <span>
                 <h5>Step - 4</h5>
-                <p>PWA’s mobile &amp; web visuals and user experience design</p>
+                <p>Creating Databases what will be accessed offline</p>
               </span>
             </div>
 
@@ -255,7 +222,7 @@
 
               <span>
                 <h5>Step - 5</h5>
-                <p>Project management and code engineering</p>
+                <p>Testing for everything</p>
               </span>
             </div>
 
@@ -268,19 +235,6 @@
 
               <span>
                 <h5>Step - 6</h5>
-                <p>Integrating third party APIs in PWA</p>
-              </span>
-            </div>
-
-
-          </div>
-
-          <div class="col l3 m3 s6">
-
-            <div class="card-panel">
-
-              <span>
-                <h5>Step - 7</h5>
                 <p>Automated, manual and user acceptance testing</p>
               </span>
             </div>
@@ -293,7 +247,7 @@
             <div class="card-panel">
 
               <span>
-                <h5>Step - 8</h5>
+                <h5>Step - 7</h5>
                 <p>Integrating best monitoring and analytics tools</p>
               </span>
             </div>
@@ -306,8 +260,8 @@
             <div class="card-panel">
 
               <span>
-                <h5>Step - 9</h5>
-                <p>Publishing PWA for web and Play store</p>
+                <h5>Step - 8</h5>
+                <p>Publishing PWA</p>
               </span>
             </div>
 
@@ -319,7 +273,7 @@
             <div class="card-panel">
 
               <span>
-                <h5>Step - 10</h5>
+                <h5>Step - 9</h5>
                 <p>Product maintenance and support</p>
               </span>
             </div>

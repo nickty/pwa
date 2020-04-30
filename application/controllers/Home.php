@@ -9,16 +9,52 @@ class Home extends CI_Controller {
 		$this->load->model('Admin/AdminModel', 'am');
 		$this->load->model('Common_model', 'cm');
 
-		//$this->load->library('session');
+		 $this->load->library('email');
+
 		
+	} 
+
+	public function email()
+	{
+		echo 'working'; 
+		$config['protocol'] = 'smtp'; 
+		$config['smtp_host'] = 'ssl:smtp.gmail.com'; 
+		$config['smtp_port'] = '465'; 
+		$config['smtp_timeout'] = '7'; 
+		$config['smtp_user'] = 'rangpurdev@gmail.com'; 
+		$config['smtp_pass'] = 'Nick124578'; 
+		$config['charset'] = 'utf-8'; 
+		$config['newline'] = "\r\n"; 
+		$config['mailtype'] = 'text'; 
+		$config['validation'] = TRUE;
+
+		//initialize the configuration of smtp settings
+		$this->email->initialize($config); 
+
+		$this->email->from('rangpurdev@gmail.com', 'PWA'); 
+		$this->email->to('rangpurdev@gmail.com'); 
+		$this->email->subject('From PWA Website'); 
+		$this->email->message('This is mani email'); 
+
+		  //last step
+		if ($this->email->send()) {
+			echo "Email sent successfully"; 
+		} else 
+		{
+			echo $this->email->print_debugger(); 
+		}
+
 	}
 
 	public function index()
 	{
+		
+	
+
 		$this->load->view('includes/header.php');
 		$this->load->view('home/index.php');
 		$this->load->view('includes/footer.php');   
-	}
+	}	
 
 	public function privacy()
 	{
