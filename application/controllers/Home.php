@@ -19,6 +19,7 @@ class Home extends CI_Controller {
 	{
 
 //Load email library
+		$this->load->library('encrypt');
 		$this->load->library('email');
 
 //SMTP & mail configuration
