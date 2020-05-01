@@ -7,7 +7,7 @@ class Home extends CI_Controller {
 		parent::__construct();  
 
 		$this->load->model('Admin/AdminModel', 'am');
-		$this->load->model('Common_model', 'cm');
+		$this->load->model('Common_Model', 'cm');
 
 		 $this->load->library('email');
 
