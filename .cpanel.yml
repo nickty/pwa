@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/ozzitjwv/pwaoptimizer.xyz/
-   
+    - /bin/cp * $DEPLOYPATH
