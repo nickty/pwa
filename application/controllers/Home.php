@@ -14,93 +14,34 @@ class Home extends CI_Controller {
 		
 	} 
 
-	public function email_new()
-	{
-		
-		$this->load->library('email');
-		
-		$config = array();
-		$config['protocol'] = 'smtp';
-		$config['smtp_host'] = 'ssl:smtp.gmail.com';
-		$config['smtp_user'] = 'rangpurdev@gmail.com';
-		$config['smtp_pass'] = 'Nick126721';
-		$config['smtp_port'] = 7;
-		$this->email->initialize($config);
-		$this->email->set_newline("\r\n");
-
-		
-
-		$from_email = "rangpurdev@gmail.com";
-		$to_email = $this->input->post('email');
-        //Load email library
-		
-		$this->email->from($from_email, 'Identification');
-		$this->email->to($to_email);
-		$this->email->subject('Send Email Codeigniter');
-		$this->email->message('The email send using codeigniter library');
-        //Send mail
-		if($this->email->send())
-			$this->session->set_flashdata("email_sent","Congragulation Email Send Successfully.");
-		else
-			$this->session->set_flashdata("email_sent","You have encountered an error");
-        //$this->load->view('contact_email_form');
-	}
 
 	public function email()
 	{
-		// echo 'working'; 
-		// $config['protocol'] = 'smtp'; 
-		// $config['smtp_host'] = 'ssl:smtp.gmail.com'; 
-		// $config['smtp_port'] = '465'; 
-		// $config['smtp_timeout'] = '7'; 
-		// $config['smtp_user'] = 'rangpurdev@gmail.com'; 
-		// $config['smtp_pass'] = 'Nick124578'; 
-		// $config['charset'] = 'utf-8'; 
-		// $config['newline'] = "\r\n"; 
-		// $config['mailtype'] = 'text'; 
-		// $config['validation'] = TRUE;
 
-		// //initialize the configuration of smtp settings
-		// $this->email->initialize($config); 
-
-		// $this->email->from('rangpurdev@gmail.com', 'PWA'); 
-		// $this->email->to('rangpurdev@gmail.com'); 
-		// $this->email->subject('From PWA Website'); 
-		// $this->email->message('This is mani email'); 
-
-		//   //last step
-		// if ($this->email->send()) {
-		// 	echo "Email sent successfully"; 
-		// } else 
-		// {
-		// 	echo $this->email->print_debugger(); 
-		// }
-
-
-		//Load email library
+//Load email library
 		$this->load->library('email');
 
 //SMTP & mail configuration
 		$config = array(
-			'protocol' => 'smtp', 
-			'smtp_host' => 'ssl://smtp.gmail.com', 
-			'smtp_port' => 465, 
-			'smtp_user' => 'rangpurdev@gmail.com', 
-			'smtp_pass' => 'Nick126721', 
-			'mailtype' => 'html', 
-			'charset' => 'iso-8859-1'
+			'protocol'  => 'smtp',
+			'smtp_host' => 'ssl://smtp.googlemail.com',
+			'smtp_port' => 465,
+			'smtp_user' => 'rangpurdev@gmail.com',
+			'smtp_pass' => 'Nick126721',
+			'mailtype'  => 'html',
+			'charset'   => 'utf-8'
 		);
 		$this->email->initialize($config);
 		$this->email->set_mailtype("html");
 		$this->email->set_newline("\r\n");
 
 //Email content
-		$htmlContent = '<h1>Sending email via Gmail SMTP server</h1>';
-		$htmlContent .= '<p>This email has sent via Gmail SMTP server from CodeIgniter application.</p>';
+		$htmlContent = '<h1>Sending email via SMTP server</h1>';
+		$htmlContent .= '<p>This email has sent via SMTP server from CodeIgniter application.</p>';
 
 		$this->email->to('nickty.86@gmail.com');
 		$this->email->from('rangpurdev@gmail.com','MyWebsite');
-		$this->email->subject('How to send email via Gmail SMTP server in CodeIgniter');
+		$this->email->subject('How to send email via SMTP server in CodeIgniter');
 		$this->email->message($htmlContent);
 
 //Send email
