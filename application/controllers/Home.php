@@ -26,7 +26,7 @@ class Home extends CI_Controller {
         $mail->isSMTP();
         $mail->Host     = 'smtp.example.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'rangpurdev@gmail.com';
+        $mail->Username = 'nickty.86@gmail.com';
         $mail->Password = 'Nick124578';
         $mail->SMTPSecure = 'ssl';
         $mail->Port     = 465;

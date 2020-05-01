@@ -35,7 +35,7 @@
 			<div class="row">
 				<div class="col s12">
 					<span id="res_message"></span>
-					<?= form_open('home/email'); ?>
+					<?= form_open('home/send'); ?>
 					<div class="row">
 						<div class="input-field col s12">
 							<input placeholder="Name" id="name" name="name" type="text" class="validate">
