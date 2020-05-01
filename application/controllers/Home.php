@@ -45,7 +45,15 @@ class Home extends CI_Controller {
 		$this->email->message($htmlContent);
 
 //Send email
-		$this->email->send();
+		$sss = $this->email->send();
+
+		 if (!$sss) {
+            // Raise error message
+            show_error($this->email->print_debugger());
+        } else {
+            // Show success notification or other things here
+            echo 'Success to send email';
+        }
 
 	}
 
