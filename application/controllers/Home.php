@@ -9,10 +9,41 @@ class Home extends CI_Controller {
 		$this->load->model('Admin/AdminModel', 'am');
 		$this->load->model('Common_Model', 'cm');
 
-		// $this->load->library('email');
+		$this->load->library('email');
 
 		
 	} 
+
+	public function email_new()
+	{
+		
+		
+		$config = array();
+		$config['protocol'] = 'smtp';
+		$config['smtp_host'] = 'ssl:smtp.gmail.com';
+		$config['smtp_user'] = 'rangpurdev@gmail.com';
+		$config['smtp_pass'] = 'Nick126721';
+		$config['smtp_port'] = 7;
+		$this->email->initialize($config);
+		$this->email->set_newline("\r\n");
+
+		
+
+		$from_email = "rangpurdev@gmail.com";
+		$to_email = $this->input->post('email');
+        //Load email library
+		$this->load->library('email');
+		$this->email->from($from_email, 'Identification');
+		$this->email->to($to_email);
+		$this->email->subject('Send Email Codeigniter');
+		$this->email->message('The email send using codeigniter library');
+        //Send mail
+		if($this->email->send())
+			$this->session->set_flashdata("email_sent","Congragulation Email Send Successfully.");
+		else
+			$this->session->set_flashdata("email_sent","You have encountered an error");
+        //$this->load->view('contact_email_form');
+	}
 
 	public function email()
 	{
