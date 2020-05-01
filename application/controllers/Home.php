@@ -17,6 +17,7 @@ class Home extends CI_Controller {
 	public function email_new()
 	{
 		
+		$this->load->library('email');
 		
 		$config = array();
 		$config['protocol'] = 'smtp';
@@ -32,7 +33,7 @@ class Home extends CI_Controller {
 		$from_email = "rangpurdev@gmail.com";
 		$to_email = $this->input->post('email');
         //Load email library
-		$this->load->library('email');
+		
 		$this->email->from($from_email, 'Identification');
 		$this->email->to($to_email);
 		$this->email->subject('Send Email Codeigniter');

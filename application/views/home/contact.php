@@ -34,7 +34,7 @@
 
 			<div class="row">
 				<div class="col s12">
-					<?php echo $this->session->flashdata('email_sent'); ?>
+					<span id="res_message"></span>
 					<?= form_open('home/email_new'); ?>
 					<div class="row">
 						<div class="input-field col s12">
