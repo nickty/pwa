@@ -27,8 +27,8 @@ class Home extends CI_Controller {
 		$this->email->initialize($config);
 		$this->email->set_newline("\r\n");
 
-		$from_email = "nickty.84@gmail.com";
-		$to_email = $this->input->post('email');
+		$from_email =  $this->input->post('email');
+		$to_email = "rangpurdev@gmail.com"; 
 		$name = $this->input->post('name');
 		$message = $this->input->post('message');
         //Load email library
