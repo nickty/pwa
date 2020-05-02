@@ -1,6 +1,6 @@
   <section class="container">
         <?php
-          echo "<h2 class='orange'>" $this->session->flashdata('email_sent') "</h2>;
+          echo "<h2 class='orange'>" $this->session->flashdata('email_sent') "</h2>";
 
           ?>
     <center>
