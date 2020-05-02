@@ -34,7 +34,7 @@ class Home extends CI_Controller {
         //Load email library
 		$this->load->library('email');
 
-
+		$this->load->helper('form');
 		$this->email->from($from_email, 'Identification');
 		$this->email->to($to_email);
 		$this->email->subject('Send Email Codeigniter');
