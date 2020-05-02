@@ -41,10 +41,16 @@ class Home extends CI_Controller {
 		$this->email->message('The email send using codeigniter library');
         //Send mail
 		if($this->email->send())
+		{
 			$this->session->set_flashdata("email_sent","Congragulation Email Send Successfully.");
-		else
+			return redirect('home/dashboard');
+		}
+
+		else{
 			$this->session->set_flashdata("email_sent","You have encountered an error");
-		//$this->load->view('contact_email_form');
+			return redirect('home/dashboard');
+		}
+		
 	}
 
 	
