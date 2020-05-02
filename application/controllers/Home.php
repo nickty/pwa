@@ -16,12 +16,7 @@ class Home extends CI_Controller {
 
 
 	function email(){
-		$from_email = "rangpurdev@gmail.com";
-		$to_email = $this->input->post('email');
-		$name = $this->input->post('name');
-		$message = $this->input->post('message');
-        //Load email library
-		$this->load->library('email');
+		
 
 		$config = array();
 		$config['protocol'] = 'smtp';
@@ -29,9 +24,15 @@ class Home extends CI_Controller {
 		$config['smtp_user'] = 'nickty.84@gmail.com';
 		$config['smtp_pass'] = 'Ji126721731537';
 		$config['smtp_port'] = 465;
-		$config['smtp_crypto'] = 'ssl'; 
 		$this->email->initialize($config);
 		$this->email->set_newline("\r\n");
+
+		$from_email = "rangpurdev@gmail.com";
+		$to_email = $this->input->post('email');
+		$name = $this->input->post('name');
+		$message = $this->input->post('message');
+        //Load email library
+		$this->load->library('email');
 
 
 		$this->email->from($from_email, 'Identification');
