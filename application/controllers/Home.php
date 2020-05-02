@@ -28,7 +28,8 @@ class Home extends CI_Controller {
 		$config['smtp_host'] = 'ssl://smtp.gmail.com';
 		$config['smtp_user'] = 'nickty.84@gmail.com';
 		$config['smtp_pass'] = 'Ji126721731537';
-		$config['smtp_port'] = 25;
+		$config['smtp_port'] = 465;
+		$config['smtp_crypto'] = 'ssl'; 
 		$this->email->initialize($config);
 		$this->email->set_newline("\r\n");
 
