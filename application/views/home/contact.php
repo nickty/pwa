@@ -1,8 +1,10 @@
 <section class="container">
+	<h2 class='orange'>
 	<?php
-          echo "<h2 class='orange'>" $this->session->flashdata('email_sent') "</h2>";
+          echo  $this->session->flashdata('email_sent');
 
           ?>
+          </h2>
 	<div style="margin: 25px;">
 		<center>
 			<img class="activator" src="<?= base_url('images/mizan.jpg'); ?>" width=250>
