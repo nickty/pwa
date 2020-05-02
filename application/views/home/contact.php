@@ -1,13 +1,18 @@
 <section class="container">
 	<h2 class='orange'>
+		<h4 class='orange-text'>
+			<?php
+			echo  $this->session->flashdata('email_sent');
 
+			?>
+		</h4>
 		<div style="margin: 25px;">
 			<center>
 				<img class="activator" src="<?= base_url('images/mizan.jpg'); ?>" width=250>
 				<h4><a href="https://www.linkedin.com/in/mizanur-rahman-a808082a/?lipi=urn%3Ali%3Apage%3Ad_flagship3_notifications%3BPy%2BQksbVQEGa1bLReLB9rg%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_notifications-nav.settings_view_profile" target="_blank">Mizan</a></h4>
 				<h5>Waiting to connect</h5>
 			</center>
-			
+
 		</div>
 		<div class="row">
 			<div class="col l6 m6 s12">
@@ -36,14 +41,9 @@
 
 				<div class="row">
 					<div class="col s12">
-						
-						<?= form_open('home/email'); ?>
-						<h2 class='orange'>
-							<?php
-							echo  $this->session->flashdata('email_sent');
 
-							?>
-						</h2>
+						<?= form_open('home/email'); ?>
+
 						<div class="row">
 							<div class="input-field col s12">
 								<input placeholder="Name" id="name" name="name" type="text" class="validate">
@@ -71,9 +71,9 @@
 						<?= form_close(); ?>
 					</div>
 				</div>
-				
+
 			</div>
-			
-			
+
+
 		</div>
 	</section>
