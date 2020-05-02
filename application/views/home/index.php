@@ -1,8 +1,10 @@
   <section class="container">
-        <?php
-          echo "<h2 class='orange'>" $this->session->flashdata('email_sent') "</h2>";
+       <h2 class='orange'>
+              <?php
+              echo  $this->session->flashdata('email_sent');
 
-          ?>
+              ?>
+            </h2>
     <center>
       <h2 style="color: #223546;
       font-size: 3.5rem;
