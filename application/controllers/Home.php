@@ -43,12 +43,12 @@ class Home extends CI_Controller {
 		if($this->email->send())
 		{
 			$this->session->set_flashdata("email_sent","Congragulation Email Send Successfully.");
-			return redirect('home/dashboard');
+			return redirect('home/contact');
 		}
 
 		else{
 			$this->session->set_flashdata("email_sent","You have encountered an error");
-			return redirect('home/dashboard');
+			return redirect('home/contact');
 		}
 		
 	}
