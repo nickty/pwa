@@ -34,8 +34,11 @@
 
 			<div class="row">
 				<div class="col s12">
-					<span id="res_message"></span>
-					<?= form_open('home/send'); ?>
+					<?php
+					echo $this->session->flashdata('email_sent');
+
+					?>
+					<?= form_open('home/email'); ?>
 					<div class="row">
 						<div class="input-field col s12">
 							<input placeholder="Name" id="name" name="name" type="text" class="validate">
@@ -55,8 +58,8 @@
 
 					<div class="row">
 						<div class="input-field col s12">
-							<textarea id="textarea1" name="textarea1" class="materialize-textarea"></textarea>
-							<label for="textarea1">Textarea</label>
+							<textarea id="message" name="message" class="materialize-textarea"></textarea>
+							<label for="message">Textarea</label>
 						</div>
 					</div>
 					<button type="submit" class="btn">Send</button>

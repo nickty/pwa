@@ -15,51 +15,35 @@ class Home extends CI_Controller {
 	} 
 
 
-	function send(){
-        // Load PHPMailer library
-        $this->load->library('phpmailer_lib');
-        
-        // PHPMailer object
-        $mail = $this->phpmailer_lib->load();
-        
-        // SMTP configuration
-        $mail->isSMTP();
-        $mail->Host     = 'smtp.example.com';
-        $mail->SMTPAuth = true;
-        $mail->Username = 'nickty.86@gmail.com';
-        $mail->Password = 'Nick124578';
-        $mail->SMTPSecure = 'ssl';
-        $mail->Port     = 465;
-        
-        $mail->setFrom('info@example.com', 'CodexWorld');
-        $mail->addReplyTo('info@example.com', 'CodexWorld');
-        
-        // Add a recipient
-        $mail->addAddress('nickty.86@gmail.com');
-        
-        // Add cc or bcc 
-        // $mail->addCC('cc@example.com');
-        // $mail->addBCC('bcc@example.com');
-        
-        // Email subject
-        $mail->Subject = 'Send Email via SMTP using PHPMailer in CodeIgniter';
-        
-        // Set email format to HTML
-        $mail->isHTML(true);
-        
-        // Email body content
-        $mailContent = "<h1>Send HTML Email using SMTP in CodeIgniter</h1>
-            <p>This is a test email sending using SMTP mail server with PHPMailer.</p>";
-        $mail->Body = $mailContent;
-        
-        // Send email
-        if(!$mail->send()){
-            echo 'Message could not be sent.';
-            echo 'Mailer Error: ' . $mail->ErrorInfo;
-        }else{
-            echo 'Message has been sent';
-        }
-    }
+	function email(){
+		$from_email = "rangpurdev@gmail.com";
+		$to_email = $this->input->post('email');
+		$name = $this->input->post('name');
+		$message = $this->input->post('message');
+        //Load email library
+		$this->load->library('email');
+
+		$config = array();
+		$config['protocol'] = 'smtp';
+		$config['smtp_host'] = 'ssl://smtp.gmail.com';
+		$config['smtp_user'] = 'rangpurdev@gmail.com';
+		$config['smtp_pass'] = 'Nick124578';
+		$config['smtp_port'] = 25;
+		$this->email->initialize($config);
+		$this->email->set_newline("\r\n");
+
+
+		$this->email->from($from_email, 'Identification');
+		$this->email->to($to_email);
+		$this->email->subject('Send Email Codeigniter');
+		$this->email->message('The email send using codeigniter library');
+        //Send mail
+		if($this->email->send())
+			$this->session->set_flashdata("email_sent","Congragulation Email Send Successfully.");
+		else
+			$this->session->set_flashdata("email_sent","You have encountered an error");
+		//$this->load->view('contact_email_form');
+	}
 
 	
 
