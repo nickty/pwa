@@ -1,4 +1,8 @@
   <section class="container">
+        <?php
+          echo $this->session->flashdata('email_sent');
+
+          ?>
     <center>
       <h2 style="color: #223546;
       font-size: 3.5rem;
@@ -113,7 +117,8 @@
         <div class="white-text col l6 m6 s12" style="padding: 30px;">
           <div class="row">
             <div class="col s12">
-              <?= form_open('home/email'); ?>
+
+              <?= form_open('home/email_home'); ?>
               <div class="row">
                 <div class="input-field col s12">
                   <input placeholder="Name" id="first_name" name="first_name" type="text" class="validate" required>

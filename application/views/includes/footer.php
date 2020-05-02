@@ -19,7 +19,7 @@
         <ul>
           <li><a class="grey-text text-lighten-3" href="#!">Uttom Betarpara, Sadar, Rangpur, BD</a></li>
           <li><a class="grey-text text-lighten-3" href="#!">Floor 2</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!"><i class="fa fa-envelope"></i> rangpurdev@pwaoptimizer.xyz</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!"><i class="fa fa-envelope"></i>rangpurdev@gmail.com</a></li>
           <li><a class="grey-text text-lighten-3" href="#!"><i class="fa fa-phone"></i> nickty18</a></li>
         </ul>
       </div>
@@ -40,7 +40,7 @@
   </div>
   <div class="footer-copyright">
     <div class="container">
-      © 2014 Copyright Text
+      © 2020 Copyright
       <a class="grey-text text-lighten-4 right" href="#!">Mizanur Rahman</a>
     </div>
   </div>

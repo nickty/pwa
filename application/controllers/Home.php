@@ -14,6 +14,42 @@ class Home extends CI_Controller {
 		
 	} 
 
+	function email_home()
+	{
+		$config = array();
+		$config['protocol'] = 'smtp';
+		$config['smtp_host'] = 'ssl://smtp.gmail.com';
+		$config['smtp_user'] = 'nickty.84@gmail.com';
+		$config['smtp_pass'] = 'Ji126721731537';
+		$config['smtp_port'] = 465;
+		$this->email->initialize($config);
+		$this->email->set_newline("\r\n");
+
+		$from_email =  $this->input->post('email');
+		$to_email = "rangpurdev@gmail.com"; 
+		$name = $this->input->post('name');
+		$message = $this->input->post('message');
+        //Load email library
+		$this->load->library('email');
+
+		$this->load->helper('form');
+		$this->email->from($from_email, $name);
+		$this->email->to($to_email);
+		$this->email->subject('PWA Website Contact Page');
+		$this->email->message($message);
+        //Send mail
+		if($this->email->send())
+		{
+			$this->session->set_flashdata("email_sent","Congragulation Email Send Successfully.");
+			return redirect('home/index');
+		}
+
+		else{
+			$this->session->set_flashdata("email_sent","You have encountered an error");
+			return redirect('home/index');
+		}
+	}
+
 
 	function email(){
 		
