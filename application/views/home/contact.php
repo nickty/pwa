@@ -1,4 +1,8 @@
 <section class="container">
+	<?php
+          echo "<h2 class='orange'>" $this->session->flashdata('email_sent') "</h2>;
+
+          ?>
 	<div style="margin: 25px;">
 		<center>
 			<img class="activator" src="<?= base_url('images/mizan.jpg'); ?>" width=250>
@@ -34,10 +38,7 @@
 
 			<div class="row">
 				<div class="col s12">
-					<?php
-					echo $this->session->flashdata('email_sent');
-
-					?>
+					
 					<?= form_open('home/email'); ?>
 					<div class="row">
 						<div class="input-field col s12">

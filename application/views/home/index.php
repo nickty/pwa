@@ -1,6 +1,6 @@
   <section class="container">
         <?php
-          echo $this->session->flashdata('email_sent');
+          echo "<h2 class='orange'>" $this->session->flashdata('email_sent') "</h2>;
 
           ?>
     <center>
@@ -121,8 +121,8 @@
               <?= form_open('home/email_home'); ?>
               <div class="row">
                 <div class="input-field col s12">
-                  <input placeholder="Name" id="first_name" name="first_name" type="text" class="validate" required>
-                  <label for="first_name">Name</label>
+                  <input placeholder="Name" id="name" name="name" type="text" class="validate" required>
+                  <label for="name">Name</label>
                 </div>
 
               </div>
@@ -137,8 +137,8 @@
 
               <div class="row">
                 <div class="input-field col s12">
-                  <textarea id="textarea1" name="textarea1" class="materialize-textarea" required></textarea>
-                  <label for="textarea1">Textarea</label>
+                  <textarea id="message" name="message" class="materialize-textarea" required></textarea>
+                  <label for="message">Textarea</label>
                 </div>
               </div>
               <button type="submit" class="btn">Send</button>
