@@ -9,7 +9,7 @@
   <?= link_tag('resources/fonts/css/all.css'); ?>
   <?= link_tag('resources/css/custom.css'); ?>
   
-
+<link rel="manifest" href="/manifest.json">
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
