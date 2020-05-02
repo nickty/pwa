@@ -1,5 +1,10 @@
 .DS_Store
 
+# By Mizan
+application/config/autoload.php
+application/config/config.php
+application/config/database.php
+
 application/cache/*
 !application/cache/index.html
 
