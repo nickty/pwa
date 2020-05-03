@@ -4344,7 +4344,7 @@ nav .brand-logo.center {
 
 @media only screen and (max-width: 992px) {
   nav .brand-logo {
-    left: 50%;
+    left: 42%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
