@@ -5,6 +5,9 @@
 	"display":"standalone", 
 	"background_color":"#FFE902", 
 	"theme_color":"#FFE1C4", 
+	"description":"Wait while its installing",
+	"dir":"ltr",
+	"lang":"en_US",
 	"orientation":"portrait-primary", 
 	"icons":[
 		{

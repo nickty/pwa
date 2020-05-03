@@ -11,6 +11,7 @@
   
 <link rel="manifest" href="/manifest.json">
 <link rel="apple-touch-icon" href="images/icons/icon-96x96.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar" content="#aa7700">
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
