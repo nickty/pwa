@@ -3,7 +3,7 @@
 		
 
 		<div class="content" style="margin: 20px;">
-			<img src="<?= base_url('images/migration-to-pwa.png'); ?>" width=820>
+			<img class="responsive-img" src="<?= base_url('images/migration-to-pwa.png'); ?>" width=820>
 		</div>
 	</div>
 
