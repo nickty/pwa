@@ -1,4 +1,5 @@
 const staticCacheName = 'site-static-v1'; 
+const dynamicChaces = 'site-dynamic-v1'; 
 const assets = [
 '/', 
 '/index.php', 
@@ -54,7 +55,9 @@ self.addEventListener('fetch', function(event)
 	//event.respondWith(fetch(event.request));
 	event.respondWith(
 		caches.match(event.request).then(cacheRes =>{
-			return cacheRes|| fetch(event.request); 
+			return cacheRes|| fetch(event.request).then(fetchRes =>{
+				return caches
+			}); 
 		})
 	);
 
