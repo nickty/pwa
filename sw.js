@@ -2,6 +2,7 @@ const staticCacheName = 'site-static';
 const assets = [
 '/', 
 '/index.php', 
+'/home/contact',
 'https://fonts.googleapis.com/icon?family=Material+Icons', 
 'https://pwaoptimizer.xyz/resources/css/materialize.css', 
 'https://pwaoptimizer.xyz/images/notification.jpg',
