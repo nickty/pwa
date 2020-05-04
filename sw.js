@@ -1,4 +1,4 @@
-const staticCacheName = 'site-static'; 
+const staticCacheName = 'site-static-v1'; 
 const assets = [
 '/', 
 '/index.php', 
@@ -35,8 +35,17 @@ self.addEventListener('install', function(event)
 
 self.addEventListener('activate', function(event)
 {
-	console.log('[Service Worker] Activating Service Worker ...', event);
-	return self.clients.claim(); 
+	// console.log('[Service Worker] Activating Service Worker ...', event);
+	// return self.clients.claim();
+	event.waitUntil(
+		caches.keys().then(keys=>{
+			//console.log(key);
+			return Promis.all(keys
+					.filter(key => key !== staticCacheName)
+					.map(key => caches.delete(key))
+				)
+		})
+	); 
 });
 
 self.addEventListener('fetch', function(event)
