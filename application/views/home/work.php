@@ -18,9 +18,9 @@
 
 			<div class="col l6 m6 s12">
 				<div class="carousel carousel-slider">
-					<a class="carousel-item" href="#one!"><img src="<?= base_url('images/work/golf_1.jpg'); ?>" height=400></a>
-					<a class="carousel-item" href="#two!"><img src="<?= base_url('images/work/golf_2.jpg'); ?>" height=400></a>
-					<a class="carousel-item" href="#three!"><img src="<?= base_url('images/work/golf_3.jpg'); ?>" height=400></a>
+					<a class="carousel-item" href="#one!"><img src="<?= base_url('images/work/golf_1.JPG'); ?>" height=400></a>
+					<a class="carousel-item" href="#two!"><img src="<?= base_url('images/work/golf_2.JPG'); ?>" height=400></a>
+					<a class="carousel-item" href="#three!"><img src="<?= base_url('images/work/golf_3.JPG'); ?>" height=400></a>
 					
 				</div>
 				<div class="work_content">
@@ -49,9 +49,9 @@
 
 			<div class="col l6 m6 s12">
 				<div class="carousel carousel-slider">
-					<a class="carousel-item" href="#one!"><img src="<?= base_url('images/work/ozzi_1.jpg'); ?>" height=400></a>
-					<a class="carousel-item" href="#two!"><img src="<?= base_url('images/work/ozzi-2.jpg'); ?>" height=400></a>
-					<a class="carousel-item" href="#three!"><img src="<?= base_url('images/work/ozzi-3.jpg'); ?>" height=400></a>
+					<a class="carousel-item" href="#one!"><img src="<?= base_url('images/work/ozzi_1.JPG'); ?>" height=400></a>
+					<a class="carousel-item" href="#two!"><img src="<?= base_url('images/work/ozzi-2.JPG'); ?>" height=400></a>
+					<a class="carousel-item" href="#three!"><img src="<?= base_url('images/work/ozzi-3.JPG'); ?>" height=400></a>
 					
 				</div>
 				<div class="work_content">
@@ -80,9 +80,9 @@
 
 			<div class="col l6 m6 s12">
 				<div class="carousel carousel-slider">
-					<a class="carousel-item" href="#one!"><img src="<?= base_url('images/work/deck_1.jpg'); ?>" height=400></a>
-					<a class="carousel-item" href="#two!"><img src="<?= base_url('images/work/deck_2.jpg'); ?>" height=400></a>
-					<a class="carousel-item" href="#three!"><img src="<?= base_url('images/work/deck_3.jpg'); ?>" height=400></a>
+					<a class="carousel-item" href="#one!"><img src="<?= base_url('images/work/deck_1.JPG'); ?>" height=400></a>
+					<a class="carousel-item" href="#two!"><img src="<?= base_url('images/work/deck_2.JPG'); ?>" height=400></a>
+					<a class="carousel-item" href="#three!"><img src="<?= base_url('images/work/deck_3.JPG'); ?>" height=400></a>
 					
 				</div>
 				<div class="work_content">
@@ -112,9 +112,9 @@
 
 			<div class="col l6 m6 s12">
 				<div class="carousel carousel-slider">
-					<a class="carousel-item" href="#one!"><img src="<?= base_url('images/work/diys_1.jpg'); ?>" height=400></a>
-					<a class="carousel-item" href="#two!"><img src="<?= base_url('images/work/diys_2.jpg'); ?>" height=400></a>
-					<a class="carousel-item" href="#three!"><img src="<?= base_url('images/work/diys_3.jpg'); ?>" height=400></a>
+					<a class="carousel-item" href="#one!"><img src="<?= base_url('images/work/diys_1.JPG'); ?>" height=400></a>
+					<a class="carousel-item" href="#two!"><img src="<?= base_url('images/work/diys_2.JPG'); ?>" height=400></a>
+					<a class="carousel-item" href="#three!"><img src="<?= base_url('images/work/diys_3.JPG'); ?>" height=400></a>
 					
 				</div>
 				<div class="work_content">
@@ -144,9 +144,9 @@
 
 			<div class="col l6 m6 s12">
 				<div class="carousel carousel-slider">
-					<a class="carousel-item" href="#one!"><img src="<?= base_url('images/work/css_1.jpg'); ?>" height=400></a>
-					<a class="carousel-item" href="#two!"><img src="<?= base_url('images/work/css_2.jpg'); ?>" height=400></a>
-					<a class="carousel-item" href="#three!"><img src="<?= base_url('images/work/css_3.png'); ?>" height=400></a>
+					<a class="carousel-item" href="#one!"><img src="<?= base_url('images/work/css_1.JPG'); ?>" height=400></a>
+					<a class="carousel-item" href="#two!"><img src="<?= base_url('images/work/css_2.JPG'); ?>" height=400></a>
+					<a class="carousel-item" href="#three!"><img src="<?= base_url('images/work/css_3.JPG'); ?>" height=400></a>
 					<a class="carousel-item" href="#four!"><img src="<?= base_url('images/work/cssproblemfix.jpg'); ?>" height=400></a>
 					
 				</div>
