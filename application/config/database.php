@@ -94,3 +94,10 @@ $db['default'] = array(
 	'failover' => array(),
 	'save_queries' => TRUE
 );
+
+
+// 'hostname' => 'localhost',
+// 'username' => 'ozzitjwv_pwauser',
+// 'password' => 'Nick126721',
+// 'database' => 'ozzitjwv_pwa',
+// 'dbdriver' => 'mysqli',

@@ -1,7 +1,7 @@
 {
 	"name":"PWA Optimizer", 
 	"short_name": "PwaOptimizer", 
-	"start_url":"/", 
+	"start_url":"http://localhost/pwaoptimizer", 
 	"display":"standalone", 
 	"background_color":"#FFE902", 
 	"theme_color":"#FFE1C4", 
