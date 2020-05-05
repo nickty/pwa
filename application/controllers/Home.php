@@ -288,5 +288,69 @@ class Home extends CI_Controller {
 		$this->session->unset_userdata('client_password'); 
 		return redirect('home/index'); 
 	}
-	
-}
+
+	public function request()
+	{
+		$this->load->view('includes/header.php');
+		$this->load->view('home/request.php');
+		$this->load->view('includes/footer.php');
+	}
+
+	public function request_quote()
+	{
+		print_r($_POST); 
+
+		if(!empty($_POST['interested'])){
+// Loop to store and display values of individual checked checkbox.
+			foreach($_POST['interested'] as $selected){
+				echo $selected."</br>";
+
+				$sel[]; 
+			}
+		}
+
+		if(!empty($_POST['group3'])){
+// Loop to store and display values of individual checked checkbox.
+			foreach($_POST['group3'] as $checked){
+				echo $checked."</br>";
+			}
+		}
+
+
+		$config = array();
+		$config['protocol'] = 'smtp';
+		$config['smtp_host'] = 'ssl://smtp.gmail.com';
+		$config['smtp_user'] = 'nickty.84@gmail.com';
+		$config['smtp_pass'] = 'Ji126721731537';
+		$config['smtp_port'] = 465;
+		$this->email->initialize($config);
+		$this->email->set_newline("\r\n");
+
+		$from_email =  $this->input->post('email');
+		$to_email = "rangpurdev@gmail.com"; 
+		$name = $this->input->post('name');
+		$message = $this->input->post('texta');
+		$message .= $checked; 
+		$message .= $sel[]; 
+        //Load email library
+		$this->load->library('email');
+
+		$this->load->helper('form');
+		$this->email->from($from_email, $name);
+		$this->email->to($to_email);
+		$this->email->subject('PWA Website Contact Page');
+		$this->email->message($message);
+        //Send mail
+		if($this->email->send())
+		{
+			$this->session->set_flashdata("email_sent","Congragulation Email Send Successfully.");
+			return redirect('home/contact');
+		}
+
+		else{
+			$this->session->set_flashdata("email_sent","You have encountered an error");
+			return redirect('home/contact');
+		}
+	}
+
+}	

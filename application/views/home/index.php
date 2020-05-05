@@ -171,7 +171,7 @@
         <div class="row">
           <div class="col l3 m3 s6">
 
-            <div class="card-panel">
+            <div class="card-panel ncard">
 
               <span>
                 <h5>Step - 1</h5>
@@ -184,7 +184,7 @@
 
           <div class="col l3 m3 s6">
             <div class="">
-              <div class="card-panel">
+              <div class="card-panel ncard">
 
                 <span>
                   <h5>Step - 2</h5>
@@ -199,7 +199,7 @@
 
           <div class="col l3 m3 s6">
 
-            <div class="card-panel">
+            <div class="card-panel ncard">
 
               <span>
                 <h5>Step - 3</h5>
@@ -212,7 +212,7 @@
 
           <div class="col l3 m3 s6">
 
-            <div class="card-panel">
+            <div class="card-panel ncard">
 
               <span>
                 <h5>Step - 4</h5>
@@ -225,7 +225,7 @@
 
           <div class="col l3 m3 s6">
 
-            <div class="card-panel">
+            <div class="card-panel ncard">
 
               <span>
                 <h5>Step - 5</h5>
@@ -238,7 +238,7 @@
 
           <div class="col l3 m3 s6">
 
-            <div class="card-panel">
+            <div class="card-panel ncard">
 
               <span>
                 <h5>Step - 6</h5>
@@ -251,7 +251,7 @@
 
           <div class="col l3 m3 s6">
 
-            <div class="card-panel">
+            <div class="card-panel ncard">
 
               <span>
                 <h5>Step - 7</h5>
@@ -264,7 +264,7 @@
 
           <div class="col l3 m3 s6">
 
-            <div class="card-panel">
+            <div class="card-panel ncard">
 
               <span>
                 <h5>Step - 8</h5>
@@ -277,7 +277,7 @@
 
           <div class="col l3 m3 s6">
 
-            <div class="card-panel">
+            <div class="card-panel ncard">
 
               <span>
                 <h5>Step - 9</h5>

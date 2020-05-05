@@ -1,7 +1,7 @@
 <div class="policy-dis-page container" id="policy">
-            					<h1>Privacy Policy</h1>
-            					<h2>What we need to understand</h2>
-            					<h4>Gleans Personal Data (Information) Voluntarily</h4> 
+            					<h3>Privacy Policy</h3>
+            					<h4>What we need to understand</h4>
+            					<h5>Gleans Personal Data (Information) Voluntarily</h5> 
             					<p>PwaOptimizer complies with the stringent privacy measures while deploying and sharing the visitors’ confidential data. We keep all the sensitive information safe and ensure that the data is not leaked, shared, disclosed, and transferred to any outsider. The entire data is only used by us and by our trusted sources to deliver a better interactive experience with our website.</p>
             					<p>In order to get connected with us, when you select the different means such as request a quote or order form; we gather your details including the contact address, first &amp; last name, date of birth, gender, phone number, and email address so that we can identify the customers or the visitors and provide better services.</p>
             					<p>This policy states that if required, we can also use the IP address of the users who visit our website. This is done to provide better assistance to them and assess the issues that our visitors might be experiencing while accessing our web servers. </p>
