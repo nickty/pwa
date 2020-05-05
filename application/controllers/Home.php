@@ -298,7 +298,7 @@ class Home extends CI_Controller {
 
 	public function request_quote()
 	{
-		print_r($_POST); 
+		// print_r($_POST); 
 
 		if(!empty($_POST['interested'])){
 // Loop to store and display values of individual checked checkbox.
