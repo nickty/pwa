@@ -40,7 +40,7 @@
         <div class="col l3 m3 s12">
           <div class="card">
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="images/offline_access.jpg" height="200">
+              <img class="activator" src="<?= base_url('images/offline_access.jpg'); ?>" height="200">
             </div>
             <div class="card-content">
               <span class="card-title activator grey-text text-darken-4">Access Offline<i class="material-icons right">more_vert</i></span>
@@ -55,7 +55,7 @@
         <div class="col l3 m3 s12">
           <div class="card">
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="images/offline_purchase.jpg" height="200">
+              <img class="activator" src="<?= base_url('images/offline_purchase.jpg'); ?>" height="200">
             </div>
             <div class="card-content">
               <span class="card-title activator grey-text text-darken-4">Offline Purchase<i class="material-icons right">more_vert</i></span>
@@ -70,7 +70,7 @@
         <div class="col l3 m3 s12">
           <div class="card">
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="images/notification.jpg" height="200">
+              <img class="activator" src="<?= base_url('images/notification.jpg'); ?>" height="200">
             </div>
             <div class="card-content">
               <span class="card-title activator grey-text text-darken-4">Notifications<i class="material-icons right">more_vert</i></span>
@@ -85,7 +85,7 @@
         <div class="col l3 m3 s12">
           <div class="card">
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="images/fastest_b.jpg" height="200">
+              <img class="activator" src="<?= base_url('images/fastest_b.jpg'); ?>" height="200">
             </div>
             <div class="card-content">
               <span class="card-title activator grey-text text-darken-4">Fastest Loading<i class="material-icons right">more_vert</i></span>
