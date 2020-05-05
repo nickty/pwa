@@ -305,7 +305,7 @@ class Home extends CI_Controller {
 			foreach($_POST['interested'] as $selected){
 				echo $selected."</br>";
 
-				$sel[]; 
+				$sel[] = $selected;  
 			}
 		}
 
@@ -331,7 +331,7 @@ class Home extends CI_Controller {
 		$name = $this->input->post('name');
 		$message = $this->input->post('texta');
 		$message .= $checked; 
-		$message .= $sel[]; 
+		$message .= $sel; 
         //Load email library
 		$this->load->library('email');
 
