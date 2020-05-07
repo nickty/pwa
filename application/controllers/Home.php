@@ -20,7 +20,7 @@ class Home extends CI_Controller {
 		$config['protocol'] = 'smtp';
 		$config['smtp_host'] = 'ssl://smtp.gmail.com';
 		$config['smtp_user'] = 'nickty.84@gmail.com';
-		$config['smtp_pass'] = 'Ji126721731537';
+		$config['smtp_pass'] = 'jijU126721';
 		$config['smtp_port'] = 465;
 		$this->email->initialize($config);
 		$this->email->set_newline("\r\n");
@@ -58,7 +58,7 @@ class Home extends CI_Controller {
 		$config['protocol'] = 'smtp';
 		$config['smtp_host'] = 'ssl://smtp.gmail.com';
 		$config['smtp_user'] = 'nickty.84@gmail.com';
-		$config['smtp_pass'] = 'Ji126721731537';
+		$config['smtp_pass'] = 'jijU126721';
 		$config['smtp_port'] = 465;
 		$this->email->initialize($config);
 		$this->email->set_newline("\r\n");
@@ -329,7 +329,7 @@ class Home extends CI_Controller {
 		$from_email =  $this->input->post('email');
 		$to_email = "rangpurdev@gmail.com"; 
 		$name = $this->input->post('name');
-		$message = $this->input->post('texta');
+		$message .= $this->input->post('texta');
 		$message .= $checked; 
 		$message .= $sel; 
         //Load email library
@@ -343,13 +343,13 @@ class Home extends CI_Controller {
         //Send mail
 		if($this->email->send())
 		{
-			$this->session->set_flashdata("email_sent","Congragulation Email Send Successfully.");
-			return redirect('home/contact');
+			$this->session->set_flashdata("email_sent","Congragulation Request Send Successfully.");
+			return redirect('home/request');
 		}
 
 		else{
 			$this->session->set_flashdata("email_sent","You have encountered an error");
-			return redirect('home/contact');
+			return redirect('home/request');
 		}
 	}
 

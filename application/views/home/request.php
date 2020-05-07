@@ -1,6 +1,12 @@
 <section>
 	<div class="container">
 		<h4 class="center">Request a Quote</h4>
+		<h4 class='orange-text'>
+			<?php
+			echo  $this->session->flashdata('email_sent');
+
+			?>
+		</h4>
 		<div class="row">
 			<div class="col l12 m12 s12">
 				<center>

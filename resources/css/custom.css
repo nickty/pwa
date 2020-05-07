@@ -1,5 +1,13 @@
 /*home page*/
 
+body {
+     display: flex;
+     min-height: 100vh;
+     flex-direction: column;
+ }
+ .container {
+     flex: 1 0 auto;
+ }
 
 .slider_icons li{
 	font-size: 50px;
@@ -52,4 +60,31 @@
 
 .ncard {
     height: 200px; 
+}
+
+.box {
+    border:1px solid gray;
+    padding: 10px; 
+    height: 200px;
+    text-align: justify;
+    margin-bottom: 10px; 
+}
+
+.box-g {
+    border:1px solid gray;
+    padding: 10px; 
+    height: 250px;
+    text-align: justify;
+    margin-bottom: 10px; 
+}
+.box span, .box-g span {
+    background-color: gray; 
+    padding: 5px; 
+    text-align: center;
+    display: block;
+    color: white; 
+}
+.design {
+
+    text-align: center justify;
 }

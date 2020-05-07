@@ -24,7 +24,7 @@
 						<p>SUNDAY TO FRIDAY: 9AM TO 8PM</p>
 
 						<h4>Email</h4>
-						<p>rangpurdev@pwaoptimizer.com</p>
+						<p>rangpurdev@gmail.com</p>
 					</div>
 					<div class="col s6 mkdf-st-text">
 						<h4>Address</h4>
