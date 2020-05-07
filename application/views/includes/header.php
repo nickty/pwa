@@ -44,7 +44,7 @@
         <ul class="right hide-on-med-and-down">
           <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Core Services<i class="material-icons right">arrow_drop_down</i></a></li>
           <li><a href="<?= base_url('home/work/') ?>">Work</a></li>
-          <!-- <li><a href="<?= //base_url('home/request/') ?>">Request A Quote</a></li> -->
+          
           <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Other Services<i class="material-icons right">arrow_drop_down</i></a></li>
           <button class="btn"><a href="<?= base_url('home/contact'); ?>">Contact</a></button>
           
