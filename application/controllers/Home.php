@@ -35,7 +35,7 @@ class Home extends CI_Controller {
 		$this->load->helper('form');
 		$this->email->from($from_email, $name);
 		$this->email->to($to_email);
-		$this->email->subject('PWA Website Contact Page');
+		$this->email->subject('PWA Website Home Page');
 		$this->email->message($message);
         //Send mail
 		if($this->email->send())
@@ -316,12 +316,13 @@ class Home extends CI_Controller {
 			}
 		}
 
+		$message = ''; 
 
 		$config = array();
 		$config['protocol'] = 'smtp';
 		$config['smtp_host'] = 'ssl://smtp.gmail.com';
 		$config['smtp_user'] = 'nickty.84@gmail.com';
-		$config['smtp_pass'] = 'Ji126721731537';
+		$config['smtp_pass'] = 'jijU126721';
 		$config['smtp_port'] = 465;
 		$this->email->initialize($config);
 		$this->email->set_newline("\r\n");
@@ -338,7 +339,7 @@ class Home extends CI_Controller {
 		$this->load->helper('form');
 		$this->email->from($from_email, $name);
 		$this->email->to($to_email);
-		$this->email->subject('PWA Website Contact Page');
+		$this->email->subject('Get a quote');
 		$this->email->message($message);
         //Send mail
 		if($this->email->send())
