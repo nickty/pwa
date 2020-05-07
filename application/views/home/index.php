@@ -119,11 +119,11 @@
         <div class="white-text col l6 m6 s12" style="padding: 30px;">
           <div class="row">
             <div class="col s12">
-              <center><h5>Quick Contact</h5></center>
+              <center><h5 class="orange-text">Quick Contact</h5></center>
               <?= form_open('home/email_home'); ?>
               <div class="row">
                 <div class="input-field col s12">
-                  <input placeholder="Name" id="name" name="name" type="text" class="validate" required>
+                  <input id="name" name="name" type="text" class="validate" required>
                   <label for="name">Name</label>
                 </div>
 
