@@ -117,8 +117,8 @@
           </div>
         </div>
         <div class="white-text col l6 m6 s12" style="padding: 30px;">
-          <div class="row">
-            <div class="col s12">
+          <div class="row white">
+            <div class="col s12" style="border:1px solid gray; padding: 10px;">
               <center><h5 class="orange-text">Quick Contact</h5></center>
               <?= form_open('home/email_home'); ?>
               <div class="row">
